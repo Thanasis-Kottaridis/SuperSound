@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="@drawable/gradient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/SuperSoundLogo_SignUp"
+                android:layout_width="103dp"
+                android:layout_height="94dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/super_sound_logo" />
+
+            <TextView
+                android:id="@+id/SuperSoundTitle_SignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SuperSoundLogo_SignUp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="cursive"
+                android:textColor="@color/colorText"
+                android:text="SuperSound "
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/UsernameText_SignUp"
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/SuperSoundTitle_SignUp"
+                android:layout_marginTop="35dp"
+                android:ems="10"
+                android:drawableLeft="@drawable/ic_account_circle"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorText"
+                android:background="#11000000"
+                android:inputType="textPersonName"
+                android:hint="Username" />
+            <EditText
+                android:id="@+id/EmailText_SignUp"
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/UsernameText_SignUp"
+                android:layout_marginTop="35dp"
+                android:ems="10"
+                android:drawableLeft="@drawable/ic_account_circle"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorText"
+                android:background="#11000000"
+                android:inputType="textPersonName"
+                android:hint="Email" />
+
+            <EditText
+                android:id="@+id/PasswordText_SignUp"
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/EmailText_SignUp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:background="#11000000"
+                android:drawableLeft="@drawable/ic_lock"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorText" />
+
+            <Button
+                android:id="@+id/SignUpButton_SignUp"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/PasswordText_SignUp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/buttonstyle"
+                android:text="Sign up"
+                android:textAllCaps="false" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

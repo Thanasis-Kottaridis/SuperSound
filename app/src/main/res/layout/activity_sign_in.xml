@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity"
+    android:background="@drawable/gradient"
+    android:fitsSystemWindows="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/SuperSoundLogo_LogIn"
+                android:layout_width="103dp"
+                android:layout_height="94dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/super_sound_logo" />
+
+            <TextView
+                android:id="@+id/SuperSoundTitle_LogIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SuperSoundLogo_LogIn"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="cursive"
+                android:textColor="@color/colorText"
+                android:text="SuperSound "
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/EmailText_LogIn"
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/SuperSoundTitle_LogIn"
+                android:layout_marginTop="35dp"
+                android:ems="10"
+                android:drawableLeft="@drawable/ic_account_circle"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorText"
+                android:background="#11000000"
+                android:inputType="textPersonName"
+                android:hint="Email" />
+
+            <EditText
+                android:id="@+id/PasswordText_LogIn"
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/EmailText_LogIn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:background="#11000000"
+                android:drawableLeft="@drawable/ic_lock"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorText" />
+            <Button
+                android:id="@+id/LogInButton_LogIn"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/PasswordText_LogIn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:text="Log in"
+                android:textAllCaps="false"
+                android:background="@drawable/buttonstyle"
+                />
+            <TextView
+                android:id="@+id/AlignmentHelper_LogIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LogInButton_LogIn"
+                android:text="|"
+                android:textSize="18dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorText"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/CreateAccount_LogIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/AlignmentHelper_LogIn"
+                android:layout_below="@+id/LogInButton_LogIn"
+                android:text="Create account"
+                android:textSize="15dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorText"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="16dp"/>
+            <TextView
+                android:id="@+id/ForgotPassword_LogIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/AlignmentHelper_LogIn"
+                android:layout_below="@+id/LogInButton_LogIn"
+                android:text="Forgot Password?"
+                android:textSize="15dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorText"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="14dp"/>
+
+            <TextView
+                android:id="@+id/MoreOptionsText_LogIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AlignmentHelper_LogIn"
+                android:text="More options"
+                android:textSize="15dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorText"
+                android:layout_marginTop="20dp"/>
+
+            <View
+                android:layout_width="120dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/AlignmentHelper_LogIn"
+                android:layout_alignRight="@+id/MoreOptionsText_LogIn"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="95dp"
+                android:background="@color/colorText" />
+            <View
+                android:layout_width="120dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/AlignmentHelper_LogIn"
+                android:layout_alignLeft="@+id/MoreOptionsText_LogIn"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="95dp"
+                android:background="@color/colorText" />
+
+            <ImageView
+                android:id="@+id/FacebookImage_LogIn"
+                android:layout_width="52dp"
+                android:layout_height="44dp"
+                android:layout_below="@+id/MoreOptionsText_LogIn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/facebook" />
+            <ImageView
+                android:id="@+id/GoogleImage_LogIn"
+                android:layout_width="52dp"
+                android:layout_height="44dp"
+                android:layout_below="@+id/MoreOptionsText_LogIn"
+                android:layout_alignRight="@+id/FacebookImage_LogIn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="100dp"
+                android:src="@drawable/google" />
+
+            <ImageView
+                android:id="@+id/InstagramImage_LogIn"
+                android:layout_width="52dp"
+                android:layout_height="44dp"
+                android:layout_below="@+id/MoreOptionsText_LogIn"
+                android:layout_alignLeft="@+id/FacebookImage_LogIn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="100dp"
+                android:src="@drawable/instagram" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

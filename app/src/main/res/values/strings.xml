@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SuperSound</string>
+    <string name="set_up_profile">Set Up Your Profile</string>
+    <string name="music_preferences">Music Preferences</string>
+
+    <string name="navigation_drawer_open">Open navigation open</string>
+    <string name="navigation_drawer_close">Open navigation close</string>
+    <string name="noAccessFineLocationPermission">Location permission required to start this application</string>
+
+    <string-array name="POIsCategories">
+        <item>Home</item>
+        <item>Shop</item>
+        <item>Work</item>
+        <item>Gym</item>
+        <item>Entertainment</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

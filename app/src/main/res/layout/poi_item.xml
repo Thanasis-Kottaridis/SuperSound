@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/SongImage"
+            android:layout_width="59dp"
+            android:layout_height="79dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_location_on2" />
+
+        <TextView
+            android:id="@+id/POI_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/SongImage"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/SongImage"
+            android:layout_toRightOf="@+id/SongImage"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Name:"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:id="@+id/POI_Category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/POI_Name"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/SongImage"
+            android:layout_toRightOf="@+id/SongImage"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Category: xx"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/POI_Preferences"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/POI_Category"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/SongImage"
+            android:layout_toRightOf="@+id/SongImage"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Preferences: xx"
+            android:textColor="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+</android.support.design.card.MaterialCardView>

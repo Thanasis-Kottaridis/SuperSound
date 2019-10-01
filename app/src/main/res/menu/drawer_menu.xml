@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="General">
+        <menu>
+            <group>
+                <item android:id="@+id/navSettings"
+                    android:icon="@drawable/ic_settings"
+                    android:title="Settings"/>
+                <item android:id="@+id/navLogOut"
+                    android:icon="@drawable/ic_exit_to_app"
+                    android:title="Log Out"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Account Management">
+        <menu>
+            <group>
+                <item android:id="@+id/navMyPOIs"
+                    android:icon="@drawable/ic_location_on"
+                    android:title="My POIs"/>
+                <item android:id="@+id/navMusicPreferences"
+                    android:icon="@drawable/ic_music_preferences"
+                    android:title="Music Preferences"/>
+                <item android:id="@+id/navMyMusic"
+                    android:icon="@drawable/ic_library_music"
+                    android:title="My Music"/>
+                <item android:id="@+id/navMyPlaylists"
+                    android:icon="@drawable/ic_my_playlist"
+                    android:title="My Playlists"/>
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <item android:id="@+id/navAboutUs"
+                android:title="About Us"/>
+            <item android:id="@+id/navPrivacyPolicy"
+                android:title="Privacy Policy" />
+        </menu>
+    </item>
+
+</menu>

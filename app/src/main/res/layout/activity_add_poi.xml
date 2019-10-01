@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".AddPoiActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/POI_Title_AddPoi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="40dp"
+                android:fontFamily="cursive"
+                android:text="Add Point Of Interest"
+                android:textColor="@color/colorText"
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/POI_Name_AddPoi"
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/POI_Title_AddPoi"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:background="#11000000"
+                android:drawableLeft="@drawable/ic_location_on"
+                android:ems="10"
+                android:hint="POI Name"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorText" />
+
+            <EditText
+                android:id="@+id/POI_Latitude_AddPoi"
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/POI_Name_AddPoi"
+                android:layout_alignEnd="@+id/SaveButton_AddPoi"
+                android:layout_marginTop="33dp"
+                android:background="#11000000"
+                android:drawableLeft="@drawable/ic_add_location"
+                android:ems="10"
+                android:hint="POI Latitude"
+                android:inputType="numberDecimal"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorText" />
+
+            <EditText
+                android:id="@+id/POI_Longitude_AddPoi"
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/POI_Latitude_AddPoi"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:background="#11000000"
+                android:drawableLeft="@drawable/ic_add_location"
+                android:ems="10"
+                android:hint="POI Longitude"
+                android:inputType="numberDecimal"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorText" />
+
+            <Button
+                android:id="@+id/POI_SetCategory_AddPoi"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/POI_Longitude_AddPoi"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/buttonstyle"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Set Category"
+                android:textAllCaps="false" />
+
+
+            <Button
+                android:id="@+id/POI_SetPreferences_AddPoi"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/POI_SetCategory_AddPoi"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/buttonstyle"
+                android:text="Set Preferences"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:id="@+id/AlignmentHelper_LogIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/POI_SetPreferences_AddPoi"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:text=""
+                android:textColor="@color/colorText"
+                android:textSize="18dp" />
+
+
+            <Button
+                android:id="@+id/CancelButton_AddPoi"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/POI_SetPreferences_AddPoi"
+                android:layout_alignRight="@+id/AlignmentHelper_LogIn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="19dp"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/buttonstyle"
+                android:text="Cancel"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/SaveButton_AddPoi"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/POI_SetPreferences_AddPoi"
+                android:layout_alignLeft="@+id/AlignmentHelper_LogIn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/buttonstyle"
+                android:text="Save"
+                android:textAllCaps="false" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

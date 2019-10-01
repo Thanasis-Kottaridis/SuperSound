@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    tools:openDrawer="start">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="35dp">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/MainLinerLayout_MainActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/CustomToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:elevation="4dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+            <TextView
+                android:id="@+id/DynamicPlaylistLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="40dp"
+                android:layout_centerInParent="true"
+                android:fontFamily="cursive"
+                android:text="Dynamic Playlist"
+                android:textColor="@color/colorText"
+                android:textSize="30dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/AlignmentHelper_Main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/DynamicPlaylistLabel"
+                android:layout_marginTop="15dp"
+                android:text=""
+                android:textSize="12dp"
+                android:textAllCaps="false" />
+
+            <!--VIEW GIA DINAMIKI ANAPARAGOGI LOCAL PLAYLIST-->
+            <RelativeLayout
+                android:id="@+id/DynamicLocalPlaylist"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/DynamicPlaylistLabel"
+                android:layout_alignRight="@+id/AlignmentHelper_Main"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:id="@+id/DynamicLocalPlaylistImageView"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/local_playlist_cover" />
+
+                <TextView
+                    android:id="@+id/DynamicLocalPlaylistLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/DynamicLocalPlaylistImageView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeMaxTextSize="15sp"
+                    android:autoSizeMinTextSize="8sp"
+                    android:autoSizeTextType="uniform"
+                    android:gravity="center"
+                    android:text="Local Playlist"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorText"
+                    />
+
+            </RelativeLayout>
+
+            <!--VIEW GIA DINAMIKI ANAPARAGOGI ONLINE PLAYLIST-->
+            <RelativeLayout
+                android:id="@+id/DynamicOnLinePlaylist"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/DynamicPlaylistLabel"
+                android:layout_alignLeft="@+id/AlignmentHelper_Main"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/DynamicOnlinePlaylistImageView"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/online_playlist_cover" />
+
+                <TextView
+                    android:id="@+id/DynamicOnlinePlaylistLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/DynamicOnlinePlaylistImageView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:autoSizeMaxTextSize="15sp"
+                    android:autoSizeMinTextSize="8sp"
+                    android:autoSizeTextType="uniform"
+                    android:gravity="center"
+                    android:text="Online Playlist"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorText"
+                    />
+
+            </RelativeLayout>
+
+            <!--VIEW GIA ONLINE PLAYLIST-->
+
+            <TextView
+                android:id="@+id/OnlinePlaylistLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DynamicLocalPlaylist"
+                android:layout_marginTop="15dp"
+                android:layout_centerInParent="true"
+                android:text="Online Playlist"
+                android:textColor="@color/colorText"
+                android:textSize="30dp"
+                android:textStyle="bold|italic"
+                android:fontFamily="cursive"
+                />
+
+            <android.support.design.widget.CoordinatorLayout
+                android:id="@+id/OnlinePlaylistCoordinatorLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/OnlinePlaylistLabel"
+                android:layout_marginTop="10dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/OnlinePlaylistRecyclerView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+
+            </android.support.design.widget.CoordinatorLayout>
+
+            <!--VIEW GIA PROTINOMENES PLAYLIST-->
+
+            <TextView
+                android:id="@+id/OnlinePlaylistRecommendationLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/OnlinePlaylistCoordinatorLayout"
+                android:layout_marginTop="15dp"
+                android:layout_centerInParent="true"
+                android:text="Playlist Recommendation"
+                android:textColor="@color/colorText"
+                android:textSize="30dp"
+                android:textStyle="bold|italic"
+                android:fontFamily="cursive"
+                />
+
+            <android.support.design.widget.CoordinatorLayout
+                android:id="@+id/OnlinePlaylistRecommendationCoordinatorLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/OnlinePlaylistRecommendationLabel"
+                android:layout_marginTop="10dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/OnlinePlaylistRecommendationRecyclerView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+
+            </android.support.design.widget.CoordinatorLayout>
+
+            <!--nees playlist-->
+            <TextView
+                android:id="@+id/NewOnlinePlaylistLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/OnlinePlaylistRecommendationCoordinatorLayout"
+                android:layout_marginTop="15dp"
+                android:layout_centerInParent="true"
+                android:text="Recently Added "
+                android:textColor="@color/colorText"
+                android:textSize="30dp"
+                android:textStyle="bold|italic"
+                android:fontFamily="cursive"
+                />
+
+            <android.support.design.widget.CoordinatorLayout
+                android:id="@+id/NewOnlinePlaylistCoordinatorLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/NewOnlinePlaylistLabel"
+                android:layout_marginTop="10dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/NewOnlinePlaylistRecyclerView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+
+            </android.support.design.widget.CoordinatorLayout>
+
+
+        </RelativeLayout>
+
+</ScrollView>
+
+<android.support.design.widget.NavigationView
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+android:layout_gravity="start"
+android:id="@+id/nav_view"
+app:headerLayout="@layout/nav_header"
+app:menu="@menu/drawer_menu" />
+
+    </android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginBottom="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/SongImage"
+            android:layout_width="59dp"
+            android:layout_height="79dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_library_music_2" />
+
+        <ImageView
+            android:id="@+id/CheckSong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/ic_file_undownload" />
+        <TextView
+            android:id="@+id/SongTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/SongImage"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/SongImage"
+            android:layout_toRightOf="@+id/SongImage"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Title:"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/SongArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SongTitle"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/SongImage"
+            android:layout_toRightOf="@+id/SongImage"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Artist: xx"
+            android:textColor="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+</android.support.design.card.MaterialCardView>

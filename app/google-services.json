@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "460692412812",
+    "firebase_url": "https://supersound-818a4.firebaseio.com",
+    "project_id": "supersound-818a4",
+    "storage_bucket": "supersound-818a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460692412812:android:0079c89b0ab29498",
+        "android_client_info": {
+          "package_name": "com.unipi.kottarido.supersound.supersound"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460692412812-jk8qrgkhf7vgs6vsmqnb4t067831g5i5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unipi.kottarido.supersound.supersound",
+            "certificate_hash": "0bce1596448547e1b4e2e9bbd1ba7d5dd016f62f"
+          }
+        },
+        {
+          "client_id": "460692412812-9vkfrqmpmr76atvjrbiv4lrl99sl7uf7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC68eaU5qV5u48JVKaAiuk_URyRfDJhvsE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460692412812-9vkfrqmpmr76atvjrbiv4lrl99sl7uf7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
